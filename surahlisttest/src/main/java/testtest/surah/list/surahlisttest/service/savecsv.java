@@ -14,7 +14,7 @@ import testtest.surah.list.surahlisttest.model.SavedData;
 public class savecsv {
 
     public void saveDataToCSV(SavedData savedData) {
-    String filePath = "data.csv";  // Path to your CSV file
+        String filePath = savedData.getEmail() + ".csv";
     
     try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) { 
         writer.write(savedData.getEmail() + "," + savedData.getFormattedCurrentdate() + "," + savedData.getComments() + "," + savedData.getSelectedSurahEnglishName());
