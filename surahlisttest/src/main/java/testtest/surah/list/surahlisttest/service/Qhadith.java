@@ -16,8 +16,10 @@ public class Qhadith {
 
     private RestTemplate restTemplate = new RestTemplate();
 
+    private String apiKey;
+
     String baseurl="https://hadithapi.com/public/api/hadiths?apiKey=";
-    String apiKey;
+   
     int x;
     String numberofHadith = "&paginate=" + x;
     String idNumber = "&id=";

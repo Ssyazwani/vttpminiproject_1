@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Hadith Generator</title>
+</head>
+<body>
+    <h1>Random Hadith Generator</h1>
+    <p>Click the button below to get a random Hadith:</p>
+
+    <form action="/getHadith" method="get">
+        <button type="submit">Get Random Hadith</button>
+    </form>
+
+    <div>
+        <p><strong>Random Hadith:</strong></p>
+        <p th:text="${hadith}">Your random Hadith will appear here.</p>
+    </div>
+</body>
+</html>
